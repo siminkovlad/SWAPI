@@ -1,0 +1,124 @@
+$rootBackground: #F8F2E7;
+$likeButtonBackground: palegreen;
+$dislikeButtonBackground: darksalmon;
+$backButtonBackground: powderblue;
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    text-align: center;
+
+    #root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        min-height: 100vh;
+        background: $rootBackground;
+
+        .wrapper {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .profile {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .name {
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-decoration: underline;
+                    margin: 10px;
+                }
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+
+                h3 {
+                    margin: 0;
+                    padding: 5px;
+                }
+
+                .avatar-input {
+                    margin-top: 1rem;
+                }
+
+                .rating {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 250px;
+                    margin: 1rem;
+
+                    .likes {
+                        color: green;
+                    }
+
+                    .dislikes {
+                        color: red;
+                    }
+                }
+
+                .back,
+                #like,
+                #dislike {
+                    padding: 10px;
+                    font-weight: 900;
+                    outline: none;
+                    cursor: pointer;
+                    width: 75px;
+                }
+
+                .back {
+                    background: $backButtonBackground;
+                }
+
+                #like {
+                    background: $likeButtonBackground;
+                }
+
+                #dislike {
+                    background: $dislikeButtonBackground;
+                }
+            }
+
+            ol {
+                padding: 0;
+                margin: 1rem 0 1rem 0;
+                width: 100%;
+
+                .character-item {
+                    border-bottom: 1px solid black;
+                    padding: 5px;
+
+                    .character-name {
+                        cursor: pointer;
+                        font-size: 24px;
+                        font-weight: 700;
+
+                        &:hover {
+                            color: olivedrab;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
