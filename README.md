@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-You can check this project [here](https://xcngq.csb.app/).
+You can check this project [here](https://codesandbox.io/s/xcngq).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
